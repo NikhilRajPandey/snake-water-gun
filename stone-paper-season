@@ -1,43 +1,43 @@
 import random
-lst = ['s','w','g']
+lst = ['stone ','paper','season']
 
-chance = 10
+chance = 50
 no_of_chance = 0
 computer_point = 0
 human_point = 0
 
-print(" \t \t \t \t Snake,Water,Gun Game\n \n")
-print("s for snake \nw for water \ng for gun \n")
+print(" \t \t \t \t Stone,paper,season Game\n \n")
+print("s for stone \n p for paper \ns for season \n")
 
 # making the game in while
 while no_of_chance < chance:
-    _input = input('Snake,Water,Gun:')
+    _input = input('Stone,paper,season:')
     _random = random.choice(lst)
 
     if _input == _random:
         print("Tie Both 0 point to each \n ")
 
     # if user enter s
-    if _input == "s" and _random == "g":
+    if _input == "s" and _random == "p":
         computer_point = computer_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
         print("computer wins 1 point \n")
         print(f"computer_point is {computer_point} and your point is {human_point} \n ")
 
-    elif _input == "s" and _random == "w":
+    elif _input == "s" and _random == "p":
         human_point = human_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
         print("Human wins 1 point \n")
         print(f"computer_point is {computer_point} and your point is {human_point} \n")
 
     # if user enter w
-    elif _input == "w" and _random == "s":
+    elif _input == "p" and _random == "s":
         computer_point = computer_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
         print("computer wins 1 point \n")
         print(f"computer_point is {computer_point} and your point is {human_point} \n ")
 
-    elif _input == "w" and _random == "g":
+    elif _input == "s" and _random == "p":
         human_point = human_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
         print("Human wins 1 point \n")
@@ -45,14 +45,14 @@ while no_of_chance < chance:
 
     # if user enter g
 
-    elif _input == "g" and _random == "s":
+    elif _input == "s" and _random == "p":
         human_point = human_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
         print("Human wins 1 point \n")
         print(f"computer_point is {computer_point} and your point is {human_point} \n")
 
 
-    elif _input == "g" and _random == "w":
+    elif _input == "s" and _random == "p":
         computer_point = computer_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
         print("computer wins 1 point \n")
