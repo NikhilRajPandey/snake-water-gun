@@ -14,55 +14,50 @@ while no_of_chance < chance:
     _input = input('Snake,Water,Gun:')
     _random = random.choice(lst)
 
+    print('') # Printing a new line
+
     if _input == _random:
-        print("Tie Both 0 point to each \n ")
+        print("Tie Both 0 point to each\n")
 
     # if user enter s
-    if _input == "s" and _random == "g":
+    elif _input == "s" and _random == "g":
         computer_point = computer_point + 1
-        print(f"your guess {_input} and computer guess is {_random} \n")
+        print(f"your guess {_input} and computer guess is {_random}")
         print("computer wins 1 point \n")
-        print(f"computer_point is {computer_point} and your point is {human_point} \n ")
 
     elif _input == "s" and _random == "w":
         human_point = human_point + 1
-        print(f"your guess {_input} and computer guess is {_random} \n")
+        print(f"your guess {_input} and computer guess is {_random}")
         print("Human wins 1 point \n")
-        print(f"computer_point is {computer_point} and your point is {human_point} \n")
 
     # if user enter w
     elif _input == "w" and _random == "s":
         computer_point = computer_point + 1
-        print(f"your guess {_input} and computer guess is {_random} \n")
+        print(f"your guess {_input} and computer guess is {_random}")
         print("computer wins 1 point \n")
-        print(f"computer_point is {computer_point} and your point is {human_point} \n ")
 
     elif _input == "w" and _random == "g":
         human_point = human_point + 1
-        print(f"your guess {_input} and computer guess is {_random} \n")
+        print(f"your guess {_input} and computer guess is {_random}")
         print("Human wins 1 point \n")
-        print(f"computer_point is {computer_point} and your point is {human_point} \n")
-
     # if user enter g
 
     elif _input == "g" and _random == "s":
         human_point = human_point + 1
-        print(f"your guess {_input} and computer guess is {_random} \n")
+        print(f"your guess {_input} and computer guess is {_random}")
         print("Human wins 1 point \n")
-        print(f"computer_point is {computer_point} and your point is {human_point} \n")
-
 
     elif _input == "g" and _random == "w":
         computer_point = computer_point + 1
-        print(f"your guess {_input} and computer guess is {_random} \n")
+        print(f"your guess {_input} and computer guess is {_random}")
         print("computer wins 1 point \n")
-        print(f"computer_point is {computer_point} and your point is {human_point} \n ")
-
     else:
         print("you have input wrong \n")
+    
+    print(f"computer_point is {computer_point} and your point is {human_point} ")
 
     no_of_chance = no_of_chance + 1
-    print(f"{chance - no_of_chance} is left out of {chance} \n")
+    print(f"{chance - no_of_chance} is left out of {chance}\n")
 
 print("Game over")
 
@@ -72,7 +67,7 @@ if computer_point > human_point:
 elif computer_point < human_point:
     print("you win and computer loose")
 
-elif computer_point = human_point:
+elif computer_point == human_point:
     print("No one win, no one loose")
 
 print(f"your point is {human_point} and computer point is {computer_point}")
