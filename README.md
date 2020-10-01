@@ -17,14 +17,14 @@ __*And the Rules are-*__
 
 ### @Author:
 
-*Name* = Nikhil Raj<br>
-*class* = VIII<br>
-*Age* = 12 years<br>
+*Name*  : Nikhil Raj<br>
+*class* : VIII<br>
+*Age*   : 12 years<br>
 
 ### @Contributors:
-*Name* = Shivam Amin<br>
-*class* = XI<br>
-*Age* = 16 years<br>
+*Name*  : Shivam Amin<br>
+*class* : XI<br>
+*Age*   : 16 years<br>
 
 __Please add your name in contributors file if you have contributed.__<br>
 And also try to contribute in code as possible because it is difficult for me to choose between multiple documentations or comments<br>
