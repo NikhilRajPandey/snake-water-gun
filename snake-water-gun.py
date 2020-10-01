@@ -66,11 +66,13 @@ while no_of_chance < chance:
 
 print("Game over")
 
+print(f"your point is {human_point} and computer point is {computer_point}")
 if computer_point > human_point:
-    print("Computer wins and you loose")
+    d = computer_point - human_point
+    print(f"Computer wins by the differnce of {d} points and you loose")
 
 if computer_point < human_point:
-    print("you win and computer loose")
+    d = human_point - computer_point
+    print(f"you win by the differnce of {d} points and computer loose")
 
-print(f"your point is {human_point} and computer point is {computer_point}")
 
