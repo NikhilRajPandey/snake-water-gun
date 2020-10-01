@@ -21,26 +21,26 @@ while no_of_chance < chance:
     if _input == "s" and _random == "g":
         computer_point = computer_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
-        print("computer wins 1 point \n")
+        print("computer wins and get 1 point \n")
         print(f"computer_point is {computer_point} and your point is {human_point} \n ")
 
     elif _input == "s" and _random == "w":
         human_point = human_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
-        print("Human wins 1 point \n")
+        print("Human wins and get 1 point \n")
         print(f"computer_point is {computer_point} and your point is {human_point} \n")
 
     # if user enter w
     elif _input == "w" and _random == "s":
         computer_point = computer_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
-        print("computer wins 1 point \n")
+        print("computer wins and get 1 point \n")
         print(f"computer_point is {computer_point} and your point is {human_point} \n ")
 
     elif _input == "w" and _random == "g":
         human_point = human_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
-        print("Human wins 1 point \n")
+        print("Human wins and get 1 point \n")
         print(f"computer_point is {computer_point} and your point is {human_point} \n")
 
     # if user enter g
@@ -48,14 +48,14 @@ while no_of_chance < chance:
     elif _input == "g" and _random == "s":
         human_point = human_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
-        print("Human wins 1 point \n")
+        print("Human wins and get 1 point \n")
         print(f"computer_point is {computer_point} and your point is {human_point} \n")
 
 
     elif _input == "g" and _random == "w":
         computer_point = computer_point + 1
         print(f"your guess {_input} and computer guess is {_random} \n")
-        print("computer wins 1 point \n")
+        print("computer wins and get 1 point \n")
         print(f"computer_point is {computer_point} and your point is {human_point} \n ")
 
     else:
@@ -70,7 +70,7 @@ if computer_point > human_point:
     print("Computer wins and you loose")
 
 if computer_point < human_point:
-    print("you win and computer loose")
+    print("You win and Computer loose")
 
-print(f"your point is {human_point} and computer point is {computer_point}")
+print(f"Result: Your achievement point is {human_point} and computer achievement point is {computer_point}")
 
