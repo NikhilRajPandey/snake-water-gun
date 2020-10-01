@@ -11,6 +11,6 @@ Name = Nikhil Raj<br>
 class = VIII<br>
 Age = 12 years<br>
 
-Please add your name in contributors file if you have contributed
+Please add your name in contributors file if you have contributed.<br>
 And also try to contribute in code as possible because it is difficult for me to choose between multiple documentations or comments
 Run the code in python and enjoy
