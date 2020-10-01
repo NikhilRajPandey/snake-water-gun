@@ -1,20 +1,19 @@
 import random
-lst = ['s','w','g']
+
+lst = ['s', 'w', 'g']
 
 chance = 10
 no_of_chance = 0
 computer_point = 0
 human_point = 0
 
-print(" \t \t \t \t Snake,Water,Gun Game\n \n")
+print(" \t \t \t \t Snake,Water,Gun Game\n")
 print("s for snake \nw for water \ng for gun \n")
 
 # making the game in while
 while no_of_chance < chance:
-    _input = input('Snake,Water,Gun:')
+    _input = input("Snake,Water,Gun:")
     _random = random.choice(lst)
-
-    print('') # Printing a new line
 
     if _input == _random:
         print("Tie Both 0 point to each\n")
@@ -40,8 +39,8 @@ while no_of_chance < chance:
         human_point = human_point + 1
         print(f"your guess {_input} and computer guess is {_random}")
         print("Human wins 1 point \n")
-    # if user enter g
 
+    # if user enter g
     elif _input == "g" and _random == "s":
         human_point = human_point + 1
         print(f"your guess {_input} and computer guess is {_random}")
@@ -51,9 +50,11 @@ while no_of_chance < chance:
         computer_point = computer_point + 1
         print(f"your guess {_input} and computer guess is {_random}")
         print("computer wins 1 point \n")
+
+    # if user enter anything else
     else:
-        print("you have input wrong \n")
-    
+        print("you enter wrong input\n")
+
     print(f"computer_point is {computer_point} and your point is {human_point} ")
 
     no_of_chance = no_of_chance + 1
@@ -71,4 +72,3 @@ elif computer_point == human_point:
     print("No one win, no one loose")
 
 print(f"your point is {human_point} and computer point is {computer_point}")
-
