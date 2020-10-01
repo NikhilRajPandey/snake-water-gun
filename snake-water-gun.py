@@ -69,8 +69,11 @@ print("Game over")
 if computer_point > human_point:
     print("Computer wins and you loose")
 
-if computer_point < human_point:
+elif computer_point < human_point:
     print("you win and computer loose")
+
+elif computer_point = human_point:
+    print("No one win, no one loose")
 
 print(f"your point is {human_point} and computer point is {computer_point}")
 
