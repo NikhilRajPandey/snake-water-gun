@@ -1,74 +1,65 @@
-import random
+#  Sanke Water Gun Game
 
-lst = ['s', 'w', 'g']
+import  random, datetime
+print('################Snake Water Gun#########################')
+def wingame(you,comp):
+    if comp==you:
+        return None
+    elif comp=='s':
+        if you=='w':
+            return False
+        elif you=='g':
+            return True,
+    elif comp=='w':
+        if you=='g':
+            return False
+        elif you=='s':
+            return True
+    elif comp=='g':
+        if you=='s':
+            return False
+        elif you=='w':
+            return True
+i=0
+score=0
+while(i==0):
 
-chance = 10
-no_of_chance = 0
-computer_point = 0
-human_point = 0
+    ra= random.randint(1,3)
+    if ra == 1:
+        comp='s'
+    elif ra == 2:
+        comp='w'
+    elif ra == 3:
+        comp='g'
 
-print(" \t \t \t \t Snake,Water,Gun Game\n")
-print("s for snake \nw for water \ng for gun \n")
+    print('Computer Turn: Snake(s) Water(w) Gun(g)?')
+    you=input('Your Turn: Snake(s) Water(w) Gun(g)?')
+    print(f'Computer Chose {comp}')
+    print(f'You Chose {you}')
 
-# making the game in while
-while no_of_chance < chance:
-    _input = input("Snake,Water,Gun:")
-    _random = random.choice(lst)
+    if wingame(you, comp)== None:
+        print('Tie')
+        
+    elif wingame(you,comp):
+        print('You Win!!')
+        score=5+score
+        print(score)
+        with open('score.txt','r') as f:
+                d=f.readline()
+        if d=='':
+            with open('score.txt','w') as f:
+                f.write(str(score))
+        elif int(d)<int(score):
+            with open('score.txt','w') as f:
+                f.write(str(score))
 
-    if _input == _random:
-        print("Tie Both 0 point to each\n")
-
-    # if user enter s
-    elif _input == "s" and _random == "g":
-        computer_point = computer_point + 1
-        print(f"your guess {_input} and computer guess is {_random}")
-        print("computer wins 1 point \n")
-
-    elif _input == "s" and _random == "w":
-        human_point = human_point + 1
-        print(f"your guess {_input} and computer guess is {_random}")
-        print("Human wins 1 point \n")
-
-    # if user enter w
-    elif _input == "w" and _random == "s":
-        computer_point = computer_point + 1
-        print(f"your guess {_input} and computer guess is {_random}")
-        print("computer wins 1 point \n")
-
-    elif _input == "w" and _random == "g":
-        human_point = human_point + 1
-        print(f"your guess {_input} and computer guess is {_random}")
-        print("Human wins 1 point \n")
-
-    # if user enter g
-    elif _input == "g" and _random == "s":
-        human_point = human_point + 1
-        print(f"your guess {_input} and computer guess is {_random}")
-        print("Human wins 1 point \n")
-
-    elif _input == "g" and _random == "w":
-        computer_point = computer_point + 1
-        print(f"your guess {_input} and computer guess is {_random}")
-        print("computer wins 1 point \n")
-
-    # if user enter anything else
     else:
-        print("you enter wrong input\n")
+        print('You Lose!!')
+    i=int(input('Continue(0) Exit(1)?'))
 
-    print(f"computer_point is {computer_point} and your point is {human_point} ")
 
-    no_of_chance = no_of_chance + 1
-    print(f"{chance - no_of_chance} is left out of {chance}\n")
 
-print("Game over")
+x = datetime.datetime.now()
+with open('score.txt','a') as f:
+    f.write(f'\n{str(x)}')
 
-if computer_point > human_point:
-    print("Computer wins and you loose")
-
-elif computer_point < human_point:
-    print("you win and computer loose")
-
-elif computer_point == human_point:
-    print("No one win, no one loose")
-
-print(f"your point is {human_point} and computer point is {computer_point}")
