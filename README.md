@@ -16,10 +16,10 @@ __*And the Rules are-*__
 ## External modules/dependencies:
 - playsound --> ```pip install playsound``` == For playing music on wins or losses.
 - Music files: (Find them above)
- - Fart.mp3
- - bruhh.mp3
- - Nope.mp3
- - anime wow.mp3
+    - Fart.mp3
+    - bruhh.mp3
+    - Nope.mp3
+    - anime wow.mp3
 
 ## Here is the opponent contributed
 
@@ -36,6 +36,7 @@ __*And the Rules are-*__
 * Vaishnavi280
 * shashank-kumar
 * Shivam Amin
+* Shravan-1908
 
 __Please add your name in contributors file if you have contributed.__<br>
 And also try to contribute in code as possible because it is difficult for me to choose between multiple documentations or comments<br>
