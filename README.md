@@ -20,6 +20,7 @@ __*And the Rules are-*__
     - bruhh.mp3
     - Nope.mp3
     - anime wow.mp3
+    - Awkward Cricket.mp3
     
 *Make sure the music files are in the current working directory or provide the full path to those music files in functions ```winning_music```, ```losing_music```, ```tie_music```. If you don't do so, the* ```FileNotFound``` *error will occur.*
 
