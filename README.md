@@ -13,6 +13,14 @@ __*And the Rules are-*__
 * You have to type __"S"__ for snake __"W"__ for water and __"G"__ for gun.
 * You can play ten matches and last you get wins that you get out of 10.
 
+## External modules/dependencies:
+- playsound --> ```pip install playsound``` == For playing music on wins or losses.
+- Music files: (Find them above)
+ - Fart.mp3
+ - bruhh.mp3
+ - Nope.mp3
+ - anime wow.mp3
+
 ## Here is the opponent contributed
 
 ### @Author:
@@ -31,4 +39,5 @@ __*And the Rules are-*__
 
 __Please add your name in contributors file if you have contributed.__<br>
 And also try to contribute in code as possible because it is difficult for me to choose between multiple documentations or comments<br>
+
 __*Run the code in python and enjoy.*__
