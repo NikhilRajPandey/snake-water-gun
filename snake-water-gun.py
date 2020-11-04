@@ -83,7 +83,7 @@ if computer_point > your_point:
     print("Computer wins and you loose")
 
 if computer_point < your_point:
-    print("you win and computer loose")
+    print("you win and the computer looses")
 
 print(f"your point is {your_point} and computer point is {computer_point}")
 
