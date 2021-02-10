@@ -25,7 +25,7 @@ def tie_music():
     Plays the tie music.
     """
     try:
-        playsound.playsound(random.choice("Awkward Cricket.mp3"))
+        playsound.playsound("Awkward Cricket.mp3")
     except Exception as e:
         print(e)
 
