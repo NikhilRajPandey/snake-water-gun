@@ -46,23 +46,9 @@ if __name__ == "__main__":
         inp = input("Enter your choice (Snake(s), Water(w), Gun(g)): ")
         inp = inp.lower()
 
-        if inp=='s' and ran=='s':
+        if inp == ran:
             print("Tie")
             print(f"\nYou chose snake and Computer also chose snake! ")
-            print("No body gets point\n")
-            tie_music()
-
-
-        elif inp=='w' and ran=='w':
-            print("Tie")
-            print(f"\nYou chose water and Computer also chose water! ")
-            print("No body gets point\n")
-            tie_music()
-
-
-        elif inp=='g' and ran=='g':
-            print("Tie")
-            print(f"\nYou chose gun and Computer also chose gun! ")
             print("No body gets point\n")
             tie_music()
 
