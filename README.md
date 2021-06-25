@@ -11,7 +11,7 @@ Cheers !
 Single player can play this game with the computer.<br>
 __*And the Rules are-*__
 * You have to type __"S"__ for snake __"W"__ for water and __"G"__ for gun.
-* You can play ten matches and last you get wins that you get out of 10.
+* You can play ten matches and at last you will get your score out of 10.
 
 ## External modules/dependencies:
 - playsound --> ```pip install playsound``` == For playing music on wins or losses.
